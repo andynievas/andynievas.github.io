@@ -1,0 +1,21 @@
+.btn {
+  background-color: transparent;
+  color: var(--dark-theme-text-color);
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  padding: 0.7rem 1.4rem;
+  transition: opacity .1s, background-color .3s;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.btn:active {
+  opacity: 0.7;
+}

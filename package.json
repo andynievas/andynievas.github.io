@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-andynievas",
+  "version": "1.0.0",
+  "description": "Portfolio web to show personal info about Andy Nievas ~Web Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andynievas/andynievas.github.io.git"
+  },
+  "keywords": [],
+  "author": "Andy Nievas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andynievas/andynievas.github.io/issues"
+  },
+  "homepage": "https://github.com/andynievas/andynievas.github.io#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

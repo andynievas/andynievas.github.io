@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="description" content="Andy Nievas personal Web site" />
+  <title>Andy Nievas</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="/css/buttons.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="container">
+      <li><a href="">Home</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container py-4">
+    <div>
+      <div>
+        <h1>Andy Nievas personal website</h1>
+        <button class="btn" id="toggleDarkModeBtn">Toggle dark mode</button>
+        <p>Soy un desarrollador web</p>
+        <form action="#">
+          <input type="text">
+          <button class="btn">Send email</button>
+        </form>
+      </div>
+
+      <div>
+        <img src="imgeen" alt="dev">
+      </div>
+    </div>
+
+    <hr>
+    <h3>Projects</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis laudantium fuga soluta nisi voluptas magni
+      aliquam harum eveniet, autem sit accusamus rerum, aliquid voluptatum excepturi repellat quis facere molestias
+      nihil?
+      Eaque, fugit quibusdam obcaecati porro, cumque ducimus fuga alias officia veritatis ullam placeat nemo id amet
+      perspiciatis. Temporibus, facilis, asperiores ducimus dignissimos fugit molestiae dolor architecto eius id,
+      possimus
+      incidunt.
+      Unde corporis aut eaque eius tempore rem. A omnis doloremque iure ratione incidunt maxime! Et quasi consectetur
+      velit id nobis nostrum aut porro. Dolores nihil, praesentium magni quos atque nobis.
+    </p>
+    <hr>
+    <h3>About me</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis laudantium fuga soluta nisi voluptas magni
+      aliquam harum eveniet, autem sit accusamus rerum, aliquid voluptatum excepturi repellat quis facere molestias
+      nihil?
+      Eaque, fugit quibusdam obcaecati porro, cumque ducimus fuga alias officia veritatis ullam placeat nemo id amet
+      perspiciatis. Temporibus, facilis, asperiores ducimus dignissimos fugit molestiae dolor architecto eius id,
+      possimus
+      incidunt.
+      Unde corporis aut eaque eius tempore rem. A omnis doloremque iure ratione incidunt maxime! Et quasi consectetur
+      velit id nobis nostrum aut porro. Dolores nihil, praesentium magni quos atque nobis.
+    </p>
+    <hr>
+  </div>
+
+  <footer>
+    <div class="container">
+
+      <h3>Contact</h3>
+      <form action="#">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+      </form>
+
+      <div>
+        Algunos links...
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const body = document.getElementsByTagName("body")[0];
+    localStorage.getItem("dark-mode") === "true" ?
+      body.classList.add("dark") :
+      body.classList.remove("dark");
+    const toggleDarkModeBtn = document.getElementById("toggleDarkModeBtn");
+    toggleDarkModeBtn.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      localStorage.getItem("dark-mode") === "true" ?
+        localStorage.setItem("dark-mode", false) :
+        localStorage.setItem("dark-mode", true);
+
+    });
+    // setTimeout(() => window.location.reload(), 1000);
+  </script>
+
+</body>
+
+</html>

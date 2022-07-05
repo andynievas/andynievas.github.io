@@ -1,0 +1,27 @@
+nav.navbar {
+  background-color: var(--dark-theme-bg-color);
+  color: var(--dark-theme-text-color);
+}
+
+
+nav.navbar ul {
+  height: 4rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.navbar ul li a {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+body.dark nav.navbar {
+  background-color: var(--light-theme-bg-color);
+  color: var(--light-theme-text-color);
+}
+
+nav.navbar ul li {
+  list-style: none;
+}
